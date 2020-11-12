@@ -61,13 +61,14 @@ export default {
   mounted() {
     this.getUsers()
     window.onscroll = () => {
+      // desktop only
       if (
-        window.innerWidth + window.scrollX >= document.body.offsetWidth &&
-        this.windowWidth > 2000
+        window.innerWidth + window.scrollX >= document.body.offsetWidth + this.windowWidth
       ) {
         this.loadMore()
       }
 
+      // mobile only
       if (
         window.innerHeight + window.scrollY >= document.body.offsetHeight &&
         this.windowWidth <= 900

@@ -1,6 +1,4 @@
-import Vuex from 'vuex';
-import store from "../store/index"
-const $storeInstance = new Vuex.Store(store);
+import { mutations } from "../store/index"
 
 const users = [
     {
@@ -23,8 +21,12 @@ const users = [
 
 describe("Vuex Store Test", () => {
     it('should store data users', () => {
-       $storeInstance.commit('CONFIRM_SAVE', users)
-       expect($storeInstance.state.usersStorage).toEqual(users)
+        const state = {
+            usersStorage: []
+        }
+
+        mutations.CONFIRM_SAVE(state, users)
+        expect(state.usersStorage).toEqual(users)
     })
 
 })

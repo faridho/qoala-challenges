@@ -73,6 +73,10 @@ $info-components: (
             }   
         }
     }
+
+    .loadmore {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -104,6 +108,7 @@ $info-components: (
         }
 
         .loadmore {
+            display: block;
             font-size: 16px;
             text-align: center;
         }

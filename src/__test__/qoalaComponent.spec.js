@@ -17,6 +17,5 @@ describe("Component Test", () => {
         expect(defaultData.users).toEqual([])
         expect(defaultData.limit).toBe(10)
         expect(defaultData.loading).toBeTruthy()
-
     })
 })
