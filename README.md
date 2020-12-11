@@ -1,4 +1,4 @@
-# Qoala Test
+# Sort Scroll
 😀 This is a website that only show a list of users responsively made by vue.js and vuex.
 
 ### Installation NPM
